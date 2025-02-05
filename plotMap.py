@@ -48,14 +48,14 @@ for df in dfs:
     if min(df.doseRate) < doselim[0]: doselim[0] = min(df.doseRate)
     
 
-linear = cm.LinearColormap(["green", "yellow", "red"], vmin=countlim[0], vmax=countlim[1])
+linear = cm.LinearColormap(['#00ff00', '#6fff00', '#cfff00', '#fff300', '#ffdb00', '#ffc600', '#ffb400', '#ffa300', '#ff8c00', '#ff7600', '#ff6500', '#ff5700', '#ff4a00', '#ff3e00', '#ff3600', '#ff2d00', '#ff2700', '#ff2100', '#ff1b00', '#ff1700'], vmin=countlim[0], vmax=countlim[1])
 linear.caption = "Countrate"
 
 # initiate map
 map = folium.Map(location=[
     mean[0], mean[1]],
     tiles=tileType,
-    zoom_start=11
+    zoom_start= 13
 )
 
 # plot all the paths
