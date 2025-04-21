@@ -1,0 +1,25 @@
+{
+  "periods" : [
+    {
+      "distance" : 0,
+      "end" : 1744982637,
+      "start" : 1744982067
+    }
+  ],
+  "title" : "Track 18 Apr 2025 15:14:27",
+  "start" : 1744982067,
+  "markers" : [
+    {
+      "lon" : 18.463884,
+      "countRate" : 11.97,
+      "doseRate" : 60.03,
+      "lat" : 54.381687,
+      "acc" : 31,
+      "date" : 1744982067
+    }
+  ],
+  "sv" : false,
+  "devices" : [
+    "RC-103-007892"
+  ]
+}
