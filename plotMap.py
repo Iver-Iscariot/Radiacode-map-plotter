@@ -150,6 +150,8 @@ def plotArea(input_folder):
                     [lats[i] + gridResolution, lons[j] - gridResolution]
                 ]
 
+
+            """  # The interpolated plot lags out the HTML page. make it lower resolution before adding back in
             if interpolated[i][j] != 0:                
                 folium.Polygon(
                     locations=coords,
@@ -158,7 +160,7 @@ def plotArea(input_folder):
                     fill=True,
                     fill_opacity=0.1
                 ).add_to(map)
-
+"""
 
             if countRateGrid[i][j] != 0:
                 folium.CircleMarker(

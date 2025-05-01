@@ -45,7 +45,7 @@ def process_rctrk_files(input_folder, output_folder):
             print(f"Converted {file} to CSV.")
 
 # Example usage
-input_folder = "polandrctkFiles"
-output_folder = "GdanskCSV"
+input_folder = "trondheimRctkFiles"
+output_folder = "trondheimCSV"
 process_rctrk_files(input_folder, output_folder)
 print(f"All files have been converted and saved in {output_folder}.")

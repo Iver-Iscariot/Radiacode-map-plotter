@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page with Frame</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 0px;
+        background-color: #f4f4f4;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+    h1 {
+      color: #333;
+      margin-top: 0px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    iframe {
+      border: 2px solid #ccc;
+      width: 90%;
+      height: 70%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Strålingsnivå Trondheim</h1>
+  <p>Strålingsdata hentet inn med Radiacode 103, og kompilert til et felles kart. Kildekode for kart-plotting på <a href="https://github.com/Iver-Iscariot/Radiacode-map-plotter" target="_blank"> Github</a> </p>
+
+  <iframe src="map.html" title="Framed Content"></iframe>
+
+</body>
+</html>
