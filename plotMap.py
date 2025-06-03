@@ -11,7 +11,7 @@ from scipy.interpolate import griddata
 ### -------------------------- preferences -----------------
 data         = "countRate"
 darkMode     = False  # light/dark mode map
-input_folders = ["TrondheimCSV", "GdanskCSV", "SverigeCSV"] 
+input_folders = ["TrondheimCSV", "GdanskCSV", "SverigeCSV", "otherCSV"] 
 
 gridResolution = 0.0001
 
@@ -53,7 +53,9 @@ def findLimits(folders):
 
 
 def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
+    print("Plotting area: " + input_folder)
     # This function plots all tracs from one folder.
+
     # It inherits a map with centerpoint and colormap found using findLimits()  
 
     linear = GlobalColorMap
@@ -81,7 +83,7 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
 
 
 
-
+    """
   #------------------------   creating interpolation grid   ------------------------
     # make a 2d array representing the araea within lonlim and latlim, with the step size of gridResolution
     lats = np.arange(latlim[0], latlim[1], gridResolution)
@@ -89,7 +91,8 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
     # make a 2d array of the same size as the lats and lons, filled with zeros
     countRateGrid = np.zeros((len(lats), len(lons)))
     numberOfPoints = np.zeros((len(lats), len(lons)))  # count number of points added to each grid cell for later mean calculation
-
+        
+   
     def getIndex(lat, lon):
         latIndex = 0
         lonIndex = 0
@@ -121,7 +124,7 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
                 countRateGrid[i][j] /= numberOfPoints[i][j]
             else:
                 countRateGrid[i][j] = 0
-
+    """
     
     #------------------------   creating interpolation grid   ------------------------
     """
@@ -156,7 +159,7 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
     """
 
     #------------------------   plotting using folium   ------------------------
-
+    """
     # add the grid to the map using folium
     # create a grid of folium polygons at the coordinates of the grid, with a color based on the interpolated value at that coordinate
     for i in range(len(countRateGrid)):
@@ -169,7 +172,7 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
                 ]
 
 
-            """  # The interpolated plot lags out the HTML page. make it lower resolution before adding back in
+            # The interpolated plot lags out the HTML page. make it lower resolution before adding back in
             if interpolated[i][j] != 0:                
                 folium.Polygon(
                     locations=coords,
@@ -178,8 +181,8 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
                     fill=True,
                     fill_opacity=0.1
                 ).add_to(map)
-            """
-            """
+            
+            
             if countRateGrid[i][j] != 0:
                 folium.CircleMarker(
                         location=[lats[i], lons[j]],
@@ -188,10 +191,13 @@ def plotArea(input_folder, Globalmap, GlobalColorMap, mean):
                         fill=True,
                         fill_opacity=0.99,
                     ).add_to(map)
-            """ 
-
+            
+    """
     # plot without use of grid (straight coordinates) for when were not using interpolation
+    counter = 0
     for df in dfs:
+        counter += 1
+        print("Plotting track nr: " + str(counter) + " of " + str(len(dfs)) + " in folder: " + input_folder)
         for i in range(len(df.lat)):
             folium.CircleMarker(
                     location=[df.lat[i], df.lon[i]],
