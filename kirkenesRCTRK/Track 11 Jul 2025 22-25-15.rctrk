@@ -1,0 +1,169 @@
+{
+  "devices" : [
+    "RC-103-007892"
+  ],
+  "start" : 1752265515,
+  "periods" : [
+    {
+      "end" : 1752265805,
+      "start" : 1752265515,
+      "distance" : 204.43
+    }
+  ],
+  "markers" : [
+    {
+      "lat" : 69.728732,
+      "doseRate" : 8.2,
+      "acc" : 11,
+      "date" : 1752265560,
+      "countRate" : 6.1,
+      "lon" : 30.042965
+    },
+    {
+      "date" : 1752265662,
+      "lat" : 69.727713,
+      "doseRate" : 9.37,
+      "lon" : 30.04297,
+      "countRate" : 6.29,
+      "acc" : 5
+    },
+    {
+      "acc" : 4,
+      "date" : 1752265616,
+      "lat" : 69.728195,
+      "lon" : 30.04292,
+      "countRate" : 6.21,
+      "doseRate" : 8.96
+    },
+    {
+      "lat" : 69.729128,
+      "lon" : 30.043039,
+      "date" : 1752265515,
+      "countRate" : 6.37,
+      "doseRate" : 9.67,
+      "acc" : 5
+    },
+    {
+      "lat" : 69.729043,
+      "acc" : 7,
+      "countRate" : 6.3,
+      "date" : 1752265527,
+      "lon" : 30.042893,
+      "doseRate" : 9.53
+    },
+    {
+      "countRate" : 6.07,
+      "doseRate" : 8.51,
+      "lon" : 30.043032,
+      "acc" : 7,
+      "lat" : 69.728509,
+      "date" : 1752265579
+    },
+    {
+      "countRate" : 6.39,
+      "lat" : 69.728929,
+      "acc" : 15,
+      "doseRate" : 9.5,
+      "date" : 1752265543,
+      "lon" : 30.042895
+    },
+    {
+      "date" : 1752265552,
+      "doseRate" : 9.6,
+      "acc" : 11,
+      "lon" : 30.042953,
+      "countRate" : 6.5,
+      "lat" : 69.728828
+    },
+    {
+      "lon" : 30.04282,
+      "countRate" : 6.34,
+      "lat" : 69.727904,
+      "acc" : 5,
+      "doseRate" : 9.65,
+      "date" : 1752265644
+    },
+    {
+      "lat" : 69.727659,
+      "doseRate" : 9.47,
+      "date" : 1752265668,
+      "countRate" : 6.34,
+      "acc" : 5,
+      "lon" : 30.043179
+    },
+    {
+      "lat" : 69.727647,
+      "lon" : 30.043451,
+      "acc" : 6,
+      "doseRate" : 12.79,
+      "countRate" : 8.98,
+      "date" : 1752265677
+    },
+    {
+      "countRate" : 5.89,
+      "lon" : 30.043855,
+      "date" : 1752265801,
+      "doseRate" : 7.89,
+      "acc" : 87,
+      "lat" : 69.727562
+    },
+    {
+      "date" : 1752265634,
+      "acc" : 5,
+      "lon" : 30.042852,
+      "lat" : 69.72801,
+      "countRate" : 6.33,
+      "doseRate" : 9.59
+    },
+    {
+      "date" : 1752265589,
+      "doseRate" : 8.6,
+      "acc" : 5,
+      "lon" : 30.042973,
+      "countRate" : 6.07,
+      "lat" : 69.728409
+    },
+    {
+      "acc" : 4,
+      "lat" : 69.7281,
+      "lon" : 30.042927,
+      "countRate" : 6.27,
+      "doseRate" : 9.37,
+      "date" : 1752265624
+    },
+    {
+      "doseRate" : 8.62,
+      "lat" : 69.72862,
+      "lon" : 30.043023,
+      "date" : 1752265568,
+      "acc" : 11,
+      "countRate" : 6.09
+    },
+    {
+      "countRate" : 6.16,
+      "doseRate" : 8.83,
+      "acc" : 7,
+      "lon" : 30.042931,
+      "date" : 1752265607,
+      "lat" : 69.728303
+    },
+    {
+      "lon" : 30.04278,
+      "lat" : 69.727802,
+      "date" : 1752265652,
+      "acc" : 6,
+      "doseRate" : 9.68,
+      "countRate" : 6.34
+    },
+    {
+      "acc" : 6,
+      "countRate" : 8.11,
+      "doseRate" : 11.9,
+      "date" : 1752265686,
+      "lat" : 69.72764,
+      "lon" : 30.043718
+    }
+  ],
+  "sv" : false,
+  "title" : "Track 11 Jul 2025 22:25:15"
+}

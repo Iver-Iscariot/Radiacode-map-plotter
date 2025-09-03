@@ -11,7 +11,7 @@ from scipy.interpolate import griddata
 ### -------------------------- preferences -----------------
 data         = "countRate"
 darkMode     = False  # light/dark mode map
-input_folders = ["TrondheimCSV", "GdanskCSV", "SverigeCSV", "otherCSV"] 
+input_folders = ["osloCSV", "TrondheimCSV", "GdanskCSV", "SverigeCSV" , "kirkenesCSV" , "otherCSV"] 
 
 gridResolution = 0.0001
 
@@ -29,7 +29,7 @@ def findLimits(folders):
    
     # Find the mean of all plots in the first folder (We only use this for the startpoint of the map plot)
     mean = [np.mean(folderDfs[0][0].lat),np.mean(folderDfs[0][0].lon)]
-
+    mean = [59.912313, 10.749738]  # oslo centerpoint hardcoded for now
     
     # fin max and min of countrate and doserate across all tracks across all folders
     countlim = [1000, 0]
